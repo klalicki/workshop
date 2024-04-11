@@ -45,6 +45,88 @@
           </ul>
         </div>
       </section>
+      <section class="rule-above">
+        <div class="splash-content">
+          <h2>Setting Up</h2>
+          <p>
+            There are two options for deploying your site: GitHub Pages and
+            Netlify. Both are free, both have the option to easily connect a
+            domain name (such as 'yourname.com').
+          </p>
+          <p>
+            You should use Netlify if you already have a site hosted on GitHub
+            Pages at 'username.github.io'
+          </p>
+          <div class="col2">
+            <div class="col">
+              <h3>GitHub Pages</h3>
+              <ol>
+                <li>
+                  Go to the
+                  <a href="https://github.com/klalicki/portfolio-builder"
+                    >GitHub repository</a
+                  >
+                  and click 'Use as Template'
+                </li>
+                <li>Set the repository name to 'username.github.io'</li>
+                <li>
+                  Go into 'Settings' on the repository, and scroll down to the
+                  'GitHub Pages' section. Under 'Build and deployment', change
+                  the 'Source' to 'GitHub Actions'.
+                </li>
+                <li>
+                  Still in the Settings tab: On the left side, click 'Actions',
+                  then 'General'. Make sure 'Actions permissions' is set to
+                  'Allow all actions and reusable workflows'.
+                </li>
+                <li>
+                  Go to 'Actions' in the top tab bar, click 'Deploy Astro site
+                  to Pages' on the left, and then click 'Run workflow'. Select
+                  'main' as the branch. This will deploy the site to GitHub
+                  Pages. This will probably take about a minute to complete.Once
+                  it is complete you will have a live URL for your site, which
+                  will be `https://username.github.io`.
+                </li>
+              </ol>
+            </div>
+            <div class="col">
+              <h3>Netlify</h3>
+              <ol>
+                <li>
+                  Make a copy of this repository by clicking the "Use this
+                  template" button. This will create a new repository in your
+                  account with the same files and folders as this one.
+                </li>
+                <li>
+                  Go to the Settings tab of your repository. On the left side,
+                  click 'Actions', then 'General'. Switch 'Actions permissions'
+                  to 'Disable actions'. This will stop GitHub Pages from trying
+                  to deploy the site, since we will be using Netlify instead.
+                </li>
+                <li>
+                  Create an account on Netlify if you don't already have one. On
+                  the Netlify dashboard, under 'Sites', click 'Add new site',
+                  then 'Import an existing project'. Click 'Deploy with GitHub'
+                  - it will ask you to authorize Netlify to access your GitHub
+                  account.
+                </li>
+                <li>
+                  Select your repository from the list of repositories. On the
+                  next page, you can set a site name - this will become part of
+                  your site's URL as sitename.netlify.app. You can change this
+                  later as well.
+                </li>
+                <li>
+                  Click the deploy button at the bottom of the screen, and
+                  Netlify will start building your site. This will probably take
+                  about a minute to complete. Once it is complete you will have
+                  a live URL for your site.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

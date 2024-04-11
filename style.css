@@ -63,14 +63,29 @@
     --color-accent-strong: var(--theme-dk-accent-strong);
   }
 }
-
+li {
+  margin-bottom: 0.25em;
+  line-height: 1.3;
+  font-size: 1rem;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: var(--font-main);
   /* transition: all 0.8s; */
 }
-
+.col2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.col {
+  flex-basis: 300px;
+  flex-grow: 1;
+  background-color: var(--color-bg-alt);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 h1,
 .splash-headline {
   font-size: 3rem;
