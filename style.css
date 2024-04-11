@@ -105,12 +105,13 @@ h2 {
   font-size: 3rem;
   font-family: var(--font-headline);
 }
+
 p {
   line-height: 1.75;
 }
 
-.splash-content p,
-.splash-content a {
+.sec-1 p,
+.sec-1 a {
   font-size: 2rem;
 }
 .workshop {
