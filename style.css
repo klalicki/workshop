@@ -109,6 +109,17 @@ p {
   line-height: 1.75;
 }
 
+.splash-content p,
+.splash-content a {
+  font-size: 2rem;
+}
+.workshop {
+  background-color: var(--color-accent-b);
+  color: var(--color-bg);
+  padding: 5px;
+  font-weight: bold;
+}
+
 p a {
   /* border: 1px solid var(--color-accent-strong); */
 }
